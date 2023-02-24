@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int num2=0,digit=0;
+  int num=0,n=0;
+ cin>>num;  //enter the number
+ n=num;
+ if(num<0)
+  cout<<"Not Pailin"<<endl;
+  else
+  {
+ do
+ {
+    digit=num%10;
+    num2=(num2*10)+digit;
+    num=num/10;
+   
+ } while(num!=0);
+ if(num2==n)
+   cout<<"Palin"<<endl;
+   else
+   cout<<"NotPalin"<<endl;
+  }
+}
